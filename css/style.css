@@ -627,3 +627,36 @@ h1, h2, h3, h4, h5, h6, p {
 .project-img, .project-link {
     display: block;
 }
+
+.project-thumb {
+    position: relative;
+}
+
+.project-action::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    
+    background-color: #188CE8;
+}
+
+.project-descript {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    padding-top: 63px;
+    padding-right: 24px;
+    padding-bottom: 63px;
+    padding-left: 24px;
+    font-size: 18px;
+    line-height: 1.56;
+    text-align: left;
+
+    outline: 4px solid red; 
+}
