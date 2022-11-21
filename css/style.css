@@ -127,6 +127,7 @@ h1, h2, h3, h4, h5, h6, p {
     border-radius: 2px;
     background-color: var(--accent-text-color);
 }
+
 .site-nav .item+.item {
     margin-left: 50px;
 }
@@ -154,22 +155,32 @@ h1, h2, h3, h4, h5, h6, p {
     align-items: baseline;
 
 }
+
+.auth-icon {
+
+    margin-right: 10px;
+    fill:currentColor;
+}
+
 .auth-icon:hover,
 .auth-icon:focus {
     fill: var(--accent-text-color);
 }
+
 .mail {
-    display:block;
+    display: flex;
+    align-items: center;
     margin-right: 50px;
-    margin-left: 10px;
+   
     color: var(--secondary-text-color);
 }
 
 .tel {
-    display:block;
-    margin-left: 10px;
+    display: flex;
+    align-items: center;
     
     color:var(--secondary-text-color);
+
 
 }
 
@@ -640,7 +651,7 @@ h1, h2, h3, h4, h5, h6, p {
     top: 0;
     left: 0;
     opacity: 0;
-    
+    z-index: 1;
     background-color: #188CE8;
 }
 
@@ -657,6 +668,12 @@ h1, h2, h3, h4, h5, h6, p {
     font-size: 18px;
     line-height: 1.56;
     text-align: left;
+    opacity: 0;
+    z-index: 2;
 
-    outline: 4px solid red; 
+   
+}
+
+.project-thumb:hover::after {
+    opacity: 1;
 }
