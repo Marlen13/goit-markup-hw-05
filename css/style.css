@@ -157,7 +157,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .auth-icon {
-
+    margin-bottom: 0;
     margin-right: 10px;
     fill:currentColor;
 }
@@ -171,14 +171,14 @@ h1, h2, h3, h4, h5, h6, p {
     display: flex;
     align-items: center;
     margin-right: 50px;
-   
+    margin-bottom: 0;
     color: var(--secondary-text-color);
 }
 
 .tel {
     display: flex;
     align-items: center;
-    
+    margin-bottom: 0;
     color:var(--secondary-text-color);
 
 
