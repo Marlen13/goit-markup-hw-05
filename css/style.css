@@ -11,6 +11,7 @@
     --white-text-color:#FFFFFF ;
     --icon-main-color:#AFB1B8;
     --card-gap:30px;
+    --hover-duration: 250ms;
 }
 /*body*/
 body {
@@ -188,9 +189,11 @@ h1, h2, h3, h4, h5, h6, p {
     margin-right: auto;
     margin-bottom: 30px;
     margin-left: auto;
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
+    
     color: var(--white-text-color);
 
 }
@@ -203,13 +206,22 @@ h1, h2, h3, h4, h5, h6, p {
     height: 50px;
     border-color: #2F303A;
     border-radius: 4px;
+
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
+
     color: var(--white-text-color);
     background-color: var(--accent-text-color);
+
+   /* transition-property: background-color;
+    transition-duration: var(--hover-duration);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    */
+    transition: background-color var(--hover-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .btn {
     display: inline-block;
     font-family: inherit;
@@ -384,7 +396,11 @@ h1, h2, h3, h4, h5, h6, p {
     height: 44px;
     color: var(--icon-main-color);
     border-radius: 50%;
+
+    transition: background-color var(--hover-duration) cubic-bezier(0.4, 0, 0.2, 1),
+                color var(--hover-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .social-icon {
     fill:currentColor;
 }
@@ -423,6 +439,8 @@ h1, h2, h3, h4, h5, h6, p {
     border: 1px solid var(--icon-main-color);
     border-radius: 4px;
     color: var(--icon-main-color);
+
+    transition: color var(--hover-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-icon {
     fill: currentColor;
@@ -454,6 +472,7 @@ h1, h2, h3, h4, h5, h6, p {
     font-style: normal;
     font-weight: 400;
     line-height: 1.71;
+    transition: color var(--hover-duration) cubic-bezier(0.4, 0, 0.2, 1)
 }
 .adress-post {
     color: var(--white-text-color);
@@ -501,6 +520,8 @@ h1, h2, h3, h4, h5, h6, p {
     color: var(--white-text-color);
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
+
+    transition: background-color var(--hover-duration) cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .footer-social-link:hover,
