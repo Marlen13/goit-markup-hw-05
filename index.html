@@ -50,7 +50,7 @@
         <section class="idea">
             <div class="container">
             <h1 class="idea-title">Ефективні рішення для<br> вашого бізнесу</h1>
-            <button class ="idea-btn btn" type="button">Замовити послугу</button>
+            <button class ="idea-btn btn" type="button" data-modal-open>Замовити послугу</button>
             </div>
         </section>
         <section class="priority">
@@ -389,14 +389,15 @@
         </div>
         </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button class="close-modal" type="button">
-                <svg class="close-modal-icon" width="" height="">
-                    <use href=""></use>
+            <button class="close-modal" type="button" data-modal-close>
+                <svg class="close-modal-icon" width="11" height="11">
+                    <use href="./images/icons.svg#vector"></use>
                 </svg>
             </button>
         </div>
     </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
