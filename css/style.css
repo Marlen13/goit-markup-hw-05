@@ -724,6 +724,7 @@ h1, h2, h3, h4, h5, h6, p {
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
+    transition: opacity 1s, visibility 0s 1s;
 }
 
 .backdrop.is-hidden .modal {
