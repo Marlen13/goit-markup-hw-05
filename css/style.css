@@ -232,6 +232,7 @@ h1, h2, h3, h4, h5, h6, p {
 
     color: var(--white-text-color);
     background-color: var(--accent-text-color);
+    border: none;
 
    /* transition-property: background-color;
     transition-duration: var(--hover-duration);
@@ -711,13 +712,14 @@ h1, h2, h3, h4, h5, h6, p {
     align-items: center;
     justify-content: center;
 
-    width: 18px;
-    height: 18px;
+    width: 30px;
+    height: 30px;
     padding: 0;
 
     background-color: transparent;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 
 }
 .backdrop.is-hidden {
