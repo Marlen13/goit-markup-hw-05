@@ -728,6 +728,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .backdrop.is-hidden .modal {
   transform: translate(0%, -50%) scale(0.5);
+
 }
 
 /*animation
