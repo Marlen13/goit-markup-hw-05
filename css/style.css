@@ -686,20 +686,19 @@ h1, h2, h3, h4, h5, h6, p {
     background-color: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(2px);
 
-
 }
 
 .modal {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(1);
     
     min-width: 528px;
     min-height: 581px;
     background-color: var(--white-text-color);
     border-radius: 4px;
-    animation: slide-to-bottom 500ms easy-out 200ms 2 both; 
+    /*animation: slide-to-bottom 500ms easy-out 200ms 2 both;*/ 
 }
 
 .close-modal {
@@ -725,11 +724,16 @@ h1, h2, h3, h4, h5, h6, p {
     pointer-events: none;
     visibility: hidden;
 }
+
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0.5);
+}
+/*animation
 @keyframes slide-to-bottom {
 
     0% {
         opacity: 0;
-        transform: translateY(-40px);
+        transform: translateY(-60px);
     }
 
     50% {
@@ -741,3 +745,4 @@ h1, h2, h3, h4, h5, h6, p {
         transform: translateY(0);
     }
 }
+Animation*/
