@@ -687,6 +687,8 @@ h1, h2, h3, h4, h5, h6, p {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(2px);
+
+
 }
 
 .modal {
@@ -699,6 +701,7 @@ h1, h2, h3, h4, h5, h6, p {
     min-height: 581px;
     background-color: var(--white-text-color);
     border-radius: 4px;
+    animation: slide-to-bottom 500ms easy-out 200ms 2 both; 
 }
 
 .close-modal {
@@ -723,4 +726,20 @@ h1, h2, h3, h4, h5, h6, p {
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
+}
+@keyframes slide-to-bottom {
+
+    0% {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+
+    50% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
