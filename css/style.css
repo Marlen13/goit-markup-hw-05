@@ -684,10 +684,13 @@ h1, h2, h3, h4, h5, h6, p {
     
 }
 
-.project-link:hover .project-action{
+.project-link:hover .project-action,
+.project-link:focus .project-action {
     opacity: 1;
     transform: translateY(0%)
 }
+
+/* modal window */
 
 .backdrop {
     position: fixed;
